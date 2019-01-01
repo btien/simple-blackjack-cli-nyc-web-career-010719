@@ -39,12 +39,12 @@ def hit?(card_total)
   #user_input = "h"
   if user_input == "s"
     card_total = card_total
-    puts "#{card_total}"
+    puts "Your cards add up to #{card_total}"
   elsif user_input == "h"
     puts "h branch"
     card1 = deal_card
     card_total = card1 + card_total
-    puts "#{card_total}"
+    puts "Your cards add up to #{card_total}"
   else 
     invalid_command
   end
@@ -66,7 +66,7 @@ def runner
   until real_card_total > 21
     #hit?(real_card_total)
     real_card_total = real_card_total + hit?(real_card_total)
-    puts "#{real_card_total}"
+    #puts "Your cards add up to #{real_card_total}"
   end
   end_game(real_card_total)
 end
