@@ -66,6 +66,7 @@ def runner
   until real_card_total > 21
     #hit?(real_card_total)
     real_card_total = real_card_total + hit?(real_card_total)
+    puts "#{real_card_total}"
   end
   end_game(real_card_total)
 end
