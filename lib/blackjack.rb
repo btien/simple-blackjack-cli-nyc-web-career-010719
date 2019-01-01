@@ -64,7 +64,7 @@ def runner
   welcome
   real_card_total = initial_round
   until real_card_total > 21
-    #hit?(real_card_total)
+    hit?(real_card_total)
     real_card_total = real_card_total + hit?(real_card_total)
     #puts "Your cards add up to #{real_card_total}"
   end
