@@ -34,18 +34,18 @@ end
 
 def hit?(card_total)
   prompt_user
-  #get_user_input
+  get_user_input
   user_input = get_user_input
   #puts "#{user_input}"
   #user_input = "h"
   if user_input == "s"
     card_total = card_total
-    puts "Your cards add up to #{card_total}"
+    #puts "Your cards add up to #{card_total}"
   elsif user_input == "h"
     #puts "h branch"
     card1 = deal_card
     card_total = card1 + card_total
-    puts "Your cards add up to #{card_total}"
+    #puts "Your cards add up to #{card_total}"
   else 
     invalid_command
   end
